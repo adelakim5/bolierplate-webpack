@@ -26,14 +26,14 @@ npm install
 4. Test it.
 
 - If you want to open your web-page quickly without any specific server, you can use `webpack-dev-server`.
-- You can load your web-page by this command.
+- You can load your web-page by this command below.
 
 ```
 npm run dev
 ```
 
 - If you want to open your web-page with specific server(e.g. express), you can use `webpack-dev-middleware`.
-- You can load your web-page by this command.
+- You can load your web-page by this command below.
 
 ```
 npm start
