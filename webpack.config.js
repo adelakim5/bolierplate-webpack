@@ -9,7 +9,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[hash].js",
-    publicPath: "http://localhost:9000",
+    publicPath: "/",
+    // if you want to auto-load edited web-page after saving, publickPath should "/" with webpack-dev-server.
   },
   module: {
     rules: [
@@ -18,6 +19,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
@@ -25,13 +27,12 @@ module.exports = {
         title: "Adela",
       },
     }),
-    new CleanWebpackPlugin(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname + "/dist"),
     index: "index.html",
     port: 9000,
-    writeToDisk: true,
     hot: true,
+    // if you do not want to remain past-bundled-file in dist, remove "writeToDisk".
   },
 };
