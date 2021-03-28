@@ -17,7 +17,7 @@ git remote -v
 git pull webpack master
 ```
 
-3. Install all the packages which are written on `package.json`.
+3. Install all the packages written on `package.json`.
 
 ```
 npm install
