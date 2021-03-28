@@ -2,10 +2,13 @@
 
 ## Installation
 
-1. Add this repository as a remote to your project.
+1. Add this repository as a remote to your project, and check your remotes.
 
 ```
 git remote add webpack https://github.com/adelakim5/bolierplate-webpack.git
+```
+```
+git remote -v 
 ```
 
 2. Pull the source code into your project.
